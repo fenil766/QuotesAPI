@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body {
+    background: linear-gradient(to right, #fbcfe8, #f9a8d4); /* Pastel gradient background for body */
+    font-family: "Varela Round", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .generate-button {
+    background: linear-gradient(to right, #7dd3fc, #38bdf8); /* Pastel blue gradient for button */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .generate-button:hover {
+    background: linear-gradient(to right, #38bdf8, #7dd3fc); /* Hover effect */
+  }
+  
+  .quote-box {
+    background-color: #f1e3d3; /* Pastel background color for the quote box */
+    border: 1px solid #d1d5db; /* Light gray border */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    width: 300px; /* Medium size */
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-top: 20px;
+  }
+  
+  .quote-text {
+    font-size: 18px;
+    color: #374151; /* Dark gray for text */
+    margin-bottom: 12px;
+    border-bottom: 2px solid #fbbf24; /* Pastel yellow underline */
+    padding-bottom: 12px;
+  }
+  
+  .author-text {
+    font-size: 16px;
+    color: #a78bfa; /* Pastel purple for the author’s name */
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .copy-button {
+    background: #fbbf24; /* Pastel yellow for copy button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+  }
+  
+  .copy-button:hover {
+    background: #2a9d8f; /* Slightly darker shade of yellow on hover */
+  }
+  
+  .copy-success-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, #fbbf24, #fcd34d); /* Pastel yellow gradient for success */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+  }
+  
+  .copy-success-message.fade-out {
+    opacity: 0;
+  }
+  
